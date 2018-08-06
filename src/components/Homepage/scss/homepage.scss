@@ -1,0 +1,43 @@
+@mixin description($color, $textshadow) {
+  color: $color;
+  text-shadow: 0 1px 0 $textshadow;
+  letter-spacing: .05em;
+}
+/********************
+   =single-profile
+*********************/
+.single-profile-outer-container {
+  background-color: #fff;
+  margin-bottom: 20px;
+
+  p.description-container {
+    // border: 1px solid red;
+    // text-align: center;
+    padding: 0 20px;
+    // white-space: pre-wrap;
+    @include description(#777, rgba(255, 0 ,0 ,0.5));
+  }
+  .img-container {
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  p.additional-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    justify-content: space-between;
+    .category {
+      font-weight: bold;
+    }
+  }
+  .button-container {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .city, .category {
+    cursor: pointer;
+  }
+}

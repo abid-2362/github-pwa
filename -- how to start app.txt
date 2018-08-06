@@ -1,0 +1,17 @@
+
+
+1. npm install
+
+2. build the app by typing the following command.
+npm run build
+
+3. just start the "app.js" file inside of "server" directory
+command:
+cd server
+node app.js
+----
+OR
+----
+node server/app.js
+
+and it will start serving the app from dist folder.
